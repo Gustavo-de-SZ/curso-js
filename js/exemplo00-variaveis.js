@@ -58,3 +58,87 @@ function exemploMercado(){
     )
 
 }
+function exercicio01() {
+    console.log("SuperDev 7ª Edição");
+}
+function exercicio02() {
+    let nome = prompt("Digite seu nome:");
+    let idade = parseInt(prompt("Digite sua idade:"));
+    let peso = parseFloat(prompt("Digite seu peso (kg):"));
+    let altura = parseFloat(prompt("Digite sua altura (m):"));
+
+    console.log("Nome:", nome);
+    console.log("Idade:", idade);
+    console.log("Peso:", peso);
+    console.log("Altura:", altura);
+}
+function exercicio03() {
+    let personagem1 = { nome: "Yone", raca: "Humano", skill: "Destino Selado", pais: "Ionia", rota: "Top" };
+    let personagem2 = { nome: "Ahri", raca: "Vastaya", skill: "Charme", pais: "Ionia", rota: "Mid" };
+    let personagem3 = { nome: "Garen", raca: "Humano", skill: "Grito do Demacian", pais: "Demacia", rota: "Top" };
+
+    console.log(personagem1, personagem2, personagem3);
+}
+function exercicio04() {
+    let nome = prompt("Digite o nome do paciente:");
+    let peso = parseFloat(prompt("Digite o peso (kg):"));
+    let altura = parseFloat(prompt("Digite a altura (m):"));
+
+    let imc = peso / (altura * altura);
+    console.log(`${nome} tem IMC de ${imc.toFixed(2)}`);
+}
+function exercicio05() {
+    let numero1 = parseFloat(prompt("Digite o primeiro número:"));
+    let numero2 = parseFloat(prompt("Digite o segundo número:"));
+
+    console.log("Soma:", numero1 + numero2);
+    console.log("Subtração:", numero1 - numero2);
+    console.log("Multiplicação:", numero1 * numero2);
+    console.log("Divisão:", numero2 !== 0 ? numero1 / numero2 : "Divisão por zero não permitida");
+}
+function exercicio06() {
+    function criarPeca(nomePeca) {
+        let modelo = prompt(`Digite o modelo da ${nomePeca}:`);
+        let preco = parseFloat(prompt(`Digite o preço da ${nomePeca}:`));
+        return { modelo, preco };
+    }
+
+    let placaMae = criarPeca("Placa Mãe");
+    let placaVideo = criarPeca("Placa de Vídeo");
+    let processador = criarPeca("Processador");
+    let memoria = criarPeca("Memória RAM");
+    let fonte = criarPeca("Fonte");
+
+    let total = placaMae.preco + placaVideo.preco + processador.preco + memoria.preco + fonte.preco;
+
+    console.log("Peças do Computador:");
+    console.log(placaMae, placaVideo, processador, memoria, fonte);
+    console.log("Total: R$" + total.toFixed(2));
+}
+function exercicio07(nota) {
+    if (nota >= 7) {
+        console.log("Aprovado!");
+    } else if (nota >= 5) {
+        console.log("Recuperação.");
+    } else {
+        console.log("Reprovado.");
+    }
+}
+function exercicio08() {
+    let contador = 0;
+    while (contador < 5) {
+        console.log("Contador:", contador);
+        contador++;
+    }
+}
+function exercicio09() {
+    let frutas = ["Maçã", "Banana", "Laranja", "Pêssego"];
+    for (let i = 0; i < frutas.length; i++) {
+        console.log(frutas[i]);
+    }
+}
+function exercicio10() {
+    for (let i = 1; i <= 10; i++) {
+        console.log("Número:", i);
+    }
+}
