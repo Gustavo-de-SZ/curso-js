@@ -152,3 +152,15 @@ function exercicio15() {
         alert("Ano comum");
     }
 }
+function numeroExtenso() {
+   let numero = parseInt(prompt("numero de 0 a 10000:")); 
+
+    const unidades = ["", "um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove"];
+    const dezenas = ["", "dez", "vinte", "trinta", "quarenta", "cinquenta", "sessenta", "setenta", "oitenta", "noventa"];
+    const centenas =["", "cem", "duzentos", "trezentos", "quatrocentos", "quinhentos", "seiscentos", "setecentos", "oitocentos", "novecentos"];
+    const onzeADezenove = ["", "onze", "doze", "treze", "quatorze", "quinze", "dezesseis", "dezessete", "dezoito", "dezenove"];
+    const milhares = ["", "mil", "dois mil", "três mil", "quatro mil", "cinco mil", "seis mil", "sete mil", "oito mil", "nove mil"];
+    let extenso = ""; 
+
+}
+
