@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-function exemploCarro(){
-    let placa = "ACB-2101";
-    let ano = 2026;
-    let anoFabricacao =2025;
-    let modelo = "BYD Song Plus Premium";
-    let preco = "2998.00"
-}
-
-=======
 function exemploCarro() {
     let placa = "ACB-1201"; // String
     let anoModelo = 2026; // int
@@ -184,4 +174,3 @@ function descobrirGeneroMusical() {
 // boolean (vdd, falso)
 
 // exemploIfComparacaoIgualdade();
->>>>>>> ab3a5ab0cbb2922fdee44238d9ed5b58a7bf883f
