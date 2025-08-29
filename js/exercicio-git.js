@@ -426,3 +426,92 @@ function multaVel(){
 
     
 }
+
+
+
+
+function exemploNome(){
+    let indice =0;
+    while(indice < 3){
+        let nome = prompt("nome");
+        indice = indice + 1;
+
+    }
+
+}
+
+for(let indice = 0; indice <3; indice = indice + 1){
+    let nome = prompt("nome")
+}
+
+function exmeploSocilicitarNome(){
+    let indice = 0;
+    while(indice < 3){
+        let nome = prompt("nome");
+        indice = indice + 1;
+
+    }
+    for(let indice = 0; indice < 3; indice = indice +1){
+        let nome = prompt("nome")
+    }
+}
+
+function apresentarSoma(){
+let some = 0;
+for(let indicado = 0; indice < 6; indice = indice +1){
+    let numero = parseInt(prompt("numero"))
+    some = soma + numero;
+}
+alert("soma " + soma)
+}
+
+function exemploContador(){
+    let contador;
+    for(contador = 0; contador <= 10; contador = contador + 1){
+        alert(contador);
+    }
+    alert("valor contador" + contador)
+}
+
+function exemploContagemRegressiva(){
+    for(let contador = 10; contador >= 0; contador = contador -1){
+        if(contador === 0){
+            alert("feliz ano novo");
+           } else{
+                alert(contador)
+            }
+        }
+    }
+function calcQuantidadeDeCamisetasPorTamanho(){
+    let quantidadeP = 0, quantidadeM = 0, quantidadeG = 0, quantidadeGG =0;
+    let quantidadeCamisetas = parseInt(prompt("qtd camisetas"))
+    for(let indice = 0; indice < quantidadeCamisetas; indice = indice + 1){
+        let tamanho = prompt(
+            "[" + (indice + 1) + "/" + quantidadeCamisetas + "] - Digita tamanho da camiseta [p/ m/ g/ gg]: "
+        ).toUpperCase().trim()
+
+        while(tamanho !== "P" && tamanho !== "M" && tamanho !== "G" && tamanho !== "GG"){
+            tamanho = prompt(
+            "tamanho invalido. \n[" + (indice + 1) + "/" + quantidadeCamisetas + 
+            "] - tamanho da camiseta [P/M/G/GG]: ").toUpperCase().trim()
+
+        }
+        if(tamanho === "P"){
+            quantidadeP = quantidadeP + 1;
+        } else if(tamanho === "M"){
+            quantidadeM = quantidadeM + 1;
+
+        } else if(tamanho === "G"){
+            quantidadeG = quantidadeG + 1;
+        } else if(tamanho === "GG"){
+            quantidadeGG = quantidadeGG + 1;
+        }
+        
+    }
+    alert(`quantidade de camisetas por tamanho:
+        P - ${quantidadeP}
+        M - ${quantidadeM}
+        G - ${quantidadeG}
+        GG - ${quantidadeGG}`)
+        
+    }
