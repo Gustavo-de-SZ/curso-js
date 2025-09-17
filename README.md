@@ -1,2 +1,2 @@
 # curso-js
-Curso de JavaScript
+Curso de javaScript
